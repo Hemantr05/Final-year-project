@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <h3>Keyword Extraction using Social Media Data</h3>
+    <p>Keyword extraction is tasked with the automatic identification of terms that best describe the subject of a document. It is a text analysis technique that consists of automatically extracting the most important words and expressions in a text. It helps summarize the content of a text and recognize the main topics which are being discussed. You can use a keyword extractor to pull out keywords or groups of two or more words that create a key phrases.</p>
+    <p>Considering that more than 80% of the data we generate every day is unstructured ― meaning it’s not organized in a predefined way and, therefore, is hard to analyze and process ― keyword extraction starts to look very appealing. Keyword extraction allows businesses to lift the most important words from huge sets of data in just seconds and obtain insights about the topics your customers are talking about.</p>
+    <p>This goal of this project is to collect tweet data using the Twitter API and analyse it to extract keywords and form a summary of the topic it’s related to. Extracted keywords will be added to the dictionary of words to use as reference for new words. Summarization can be performed by relating keywords to topics based on similar context which is a vector space consisting of multiple clusters of related words.</p>
+    <p>Technologies used:</p>
+    <ul>
+  <li>Word2Vec model for word embedding.</li>
+  <li>ROUGE for summarization.</li>
+  <li>NetworkX for visualization(Python module for generating graphs).</li>
+</ul>
+
+{% endblock content %}
