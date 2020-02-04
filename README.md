@@ -24,5 +24,5 @@ docker run 'paste the hashcode here without the quotes':
 
 example:
 
-![alt test](images/docker-steps.png)
+![alt test](https://github.com/Hemantr05/Final-year-project/blob/master/images/docker_steps.png)
 
