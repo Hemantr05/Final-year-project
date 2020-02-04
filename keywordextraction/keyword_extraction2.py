@@ -1,6 +1,6 @@
 import nltk
 nltk.download('punkt')
-# nltk.download()
+nltk.download('stopwords')
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
 from nltk.probability import FreqDist
@@ -24,6 +24,7 @@ def getText(url):
     page = urlopen(url).read().decode('utf8', 'ignore')
     soup = BeautifulSoup(page, 'lxml')
     text = ' '.join(map(lambda p: p.text, soup.find_all('p')))
+    print("Loaded text.")
     return text.encode('ascii', errors='replace').decode().replace("?","")
 text = getText(articleURL)
 
@@ -39,6 +40,7 @@ def summarize(text, n):
     
     wordSent= [word for word in wordSent if word not in stopWords]
     freq = FreqDist(wordSent)
+    freq.plot(20,cumulative=False)
     ranking = defaultdict(int)
     
     for i, sent in enumerate(sents):
@@ -52,7 +54,7 @@ summaryArr = summarize(text, 10)
 print("================================= Text Summarization =========================== \n",summaryArr)
 #summaryArr
 
-freq.plot(20, cumulative=False)
+#freq.plot(20, cumulative=False)
 
 
 # ============================== TF-IDF =====================================
@@ -83,6 +85,7 @@ for cluster in range(3):
     word_sent = word_tokenize(text[cluster].lower())
     word_sent=[word for word in word_sent if word not in stopWords]
     freq = FreqDist(word_sent)
+    freq.plot(20,cumulative=False)
     keywords[cluster] = nlargest(100, freq, key=freq.get)
     counts[cluster]=freq
 uniqueKeys={}
@@ -95,6 +98,6 @@ for cluster in range(3):
     uniqueKeys[cluster]=nlargest(10, unique, key=counts[cluster].get)
 print(uniqueKeys)
 
-freq.plot(20, cumulative=False)
+#freq.plot(20, cumulative=False)
 
 
