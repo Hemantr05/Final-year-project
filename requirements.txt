@@ -18,3 +18,7 @@ six==1.11.0
 SQLAlchemy==1.2.7
 Werkzeug==0.14.1
 WTForms==2.1
+nltk==3.2.5
+beautifulsoup4=4.6.3
+
+
