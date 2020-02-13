@@ -54,7 +54,6 @@ summaryArr = summarize(text, 10)
 print("================================= Text Summarization =========================== \n",summaryArr)
 #summaryArr
 
-#freq.plot(20, cumulative=False)
 
 
 # ============================== TF-IDF =====================================
