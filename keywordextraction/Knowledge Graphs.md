@@ -26,4 +26,4 @@ The new relationships can emerge not only from the first node but from any node 
 
 ### Reference:
 
-![alt Knowledge Graph – A Powerful Data Science Technique to Mine Information from Text (with Python code)](https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/)
+![Knowledge Graph – A Powerful Data Science Technique to Mine Information from Text (with Python code)](https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/)
