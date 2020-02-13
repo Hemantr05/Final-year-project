@@ -32,7 +32,6 @@ html = response.read()
 
 # Display content
 
-#html
 
 # Use Beautiful Soup which is a Python library for pulling data out of HTML and XML files. 
 # Use beautiful soup to clean our webpage text of HTML tags.
