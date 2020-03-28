@@ -21,6 +21,19 @@
 	Try connecting using node after you do so.
 
 	If that doesn't work, try it without @'localhost' part.
+	
+-	MySQL :
+	
+	create database project;
+	use project;
+	create table project(word varchar(100), count integer(10)); // 'word' can be added as primary key depending on our usage
+	desc project; // to check the table definition 
+	
+	select * from project; //to view the records
 
 -	For Python dictionary to SQL, check examples uploaded.
--	For SQL to JS, download the dependencies first : fast-csv, fs, csv-writer
+
+-	For SQL to JS, download the dependencies first : 
+	fast-csv 
+	fs 
+	csv-writer
