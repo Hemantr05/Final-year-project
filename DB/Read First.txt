@@ -1,5 +1,5 @@
 
-- 	Install MySQL, Python, Node Package Manager with all the    	environment variables set up.
+- 	Install MySQL, Python, Node Package Manager with all the environment variables set up.
 
 -	Download mysql module for JS
 	npm install mysql
