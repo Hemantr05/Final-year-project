@@ -22,3 +22,5 @@
 
 	If that doesn't work, try it without @'localhost' part.
 
+-	For Python dictionary to SQL, check examples uploaded.
+-	For SQL to JS, download the dependencies first : fast-csv, fs, csv-writer
