@@ -1,4 +1,8 @@
 
+# Instructions to access Database
+
+## Installation:
+
 - 	Install MySQL, Python, Node Package Manager with all the environment variables set up.
 
 -	Download mysql module for JS
@@ -7,16 +11,17 @@
 
 -	Download mysql-connector module using pip for python
 
+## Usage:
 
 -	Run the following code on MySQL
 
-	ALTER USER 'root'@'localhost' IDENTIFIED WITH 	mysql_native_password BY 'password'
+	`ALTER USER 'root'@'localhost' IDENTIFIED WITH 	mysql_native_password BY 'password'`
 
 	Where root as your user localhost as your URL and password 	as your password
 
 	Then run this query to refresh privileges:
 
-	flush privileges;
+	`flush privileges;`
 
 	Try connecting using node after you do so.
 
@@ -24,16 +29,21 @@
 	
 -	MySQL :
 	
-	create database project;
-	use project;
-	create table project(word varchar(100), count integer(10)); // 'word' can be added as primary key depending on our usage
-	desc project; // to check the table definition 
+	`create database project;`
 	
-	select * from project; //to view the records
+	`use project;`
+	
+	`create table project(word varchar(100), count integer(10));` // 'word' can be added as primary key depending on our usage
+	`desc project;` // to check the table definition 
+	
+	`select * from project;` //to view the records
 
 -	For Python dictionary to SQL, check examples uploaded.
 
 -	For SQL to JS, download the dependencies first : 
-	fast-csv 
-	fs 
-	csv-writer
+
+	1. fast-csv 
+	
+	2. fs 
+	
+	3. csv-writer
