@@ -40,7 +40,12 @@
 
 -	For Python dictionary to SQL, check examples uploaded.
 
--	For SQL to JS, download the dependencies first : 
+-	For Visualization, it is convenient to use dataframes, hence convert the SQL data to dataframes (JS)
+	
+	npm install dataframe-js	//install library
+	(Check uploaded example for usage)
+
+-	For SQL to JS to CSV (Optional), download the dependencies first : 
 
 	1. fast-csv 
 	
