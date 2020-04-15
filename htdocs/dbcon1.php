@@ -30,6 +30,7 @@ echo json_encode($result->fetch_all());
 console.log(typeof dbr);
 
 google.charts.load('current', {packages: ['corechart']});
+google.charts.load('current', {'packages':['table']});
     google.charts.setOnLoadCallback(drawChart);
 
     function drawChart() {
@@ -47,6 +48,29 @@ google.charts.load('current', {packages: ['corechart']});
           title: 'Words',
           is3D: true,
         };
+        var options1 = {
+          title: 'Words',
+          pieHole : 0.4,
+        };
+        var options2 = {
+          title: 'Words',
+          legend: 'none',
+          pieSliceText: 'label',
+          slices: {  4: {offset: 0.2},
+                    12: {offset: 0.3},
+                    14: {offset: 0.4},
+                    15: {offset: 0.5},
+                    50 :{offset: 0.6},
+                    75 :{offset: 0.7},
+                    100 :{offset: 0.5},
+                    125 :{offset: 0.4},
+                    150 :{offset: 0.6},
+                    175 :{offset: 0.3},
+                    200 :{offset: 0.6},
+                    225 :{offset: 0.5},
+          },
+        };
+        
       // Instantiate and draw the chart.
       var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
       chart.draw(data, options);
@@ -54,6 +78,14 @@ google.charts.load('current', {packages: ['corechart']});
       chart.draw(data, options);
       var chart = new google.visualization.ScatterChart(document.getElementById('myScatterChart'));
       chart.draw(data, options);
+      var chart = new google.visualization.BarChart(document.getElementById('myBarChart'));
+      chart.draw(data, options);
+      var chart = new google.visualization.PieChart(document.getElementById('myDonutChart'));
+      chart.draw(data, options1);
+      var chart = new google.visualization.PieChart(document.getElementById('mySliceChart'));
+      chart.draw(data, options2);
+      var table = new google.visualization.Table(document.getElementById('table_div'));
+	  table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
 
 
     }
@@ -66,5 +98,14 @@ google.charts.load('current', {packages: ['corechart']});
   <div id="myColumnChart" style="width: 1400px; height: 500px;"> </div>
   <br>
   <div id="myScatterChart" style="width: 1400px; height: 500px;"> </div>
+  <br>
+  <div id="myBarChart" style="width: 1400px; height: 500px;"> </div>
+  <br>
+  <div id="myDonutChart" style="width: 1400px; height: 500px;"> </div>
+  <br>
+  <div id="mySliceChart" style="width: 1400px; height: 500px;"> </div>
+  <br>
+  <br>
+  <div id="table_div" style="width: 700px; height: 500px;"> </div>
 </body>
 </html>
