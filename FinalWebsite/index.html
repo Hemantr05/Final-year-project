@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Keyword Extraction</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1><strong><a href="index.html">Keyword Extraction</a></strong> by BadAss</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contactus.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>Keyword Extraction</h2>
+				<p>To extract keywords from text or from a web page, follow the instructions on the input screen below.	 <br /> Keywords are listed in the output area, and the meaning of the input is numerically encoded as a semantic fingerprint, <br /> which is graphically displayed as a square grid. Each blue dot on the grid contains part of the meaning of the text.</p>
+				<ul class="actions">
+					<li><a href="#section2" class="button special big">Get Started</a></li>
+				</ul>
+			</section>
+
+			<!-- One -->
+			<div id="section2">
+				
+			<table class="d-flex justify-content-center my-5" >
+				<br>
+				<tr><b>Text/Link for Keyword Extraction :</tr>
+					<br>
+				<form action="testing.php" method="get">
+				<tr>
+					<td style="border: 1px solid black;" ><b>Select Type of Input :
+						<br>
+						<br>
+						<br>
+						<input type="radio" id="radiogroup1" name="radiogroup" class="radiogroup" value="URL" checked="checked">
+						<label for="radiogroup1" ><b>URL</label>
+						<br>
+						<input type="radio" id="radiogroup2" name="radiogroup" class="radiogroup" value="Plain Text" >
+						<label for="radiogroup2"><b>Plain Text</label>
+					</td>
+					<td colspan="3" style="border: 1px solid black;">
+
+						<textarea id="usertext" cols="150" rows="15" name="usertext"></textarea>
+					</td>
+				</tr>
+				
+				<tr>
+					
+					<td><input type="submit" name="myButton" id="myButton"></td>
+		
+
+				</tr>
+				</form>
+					<!--<td><button id="myButton" class="float-left submit-button" >Visualize Submitted Data</button>
+						<script type="text/javascript">
+    					document.getElementById("myButton").onclick = function () {
+        				location.href = "dbcon1.php";
+    };
+</script>
+
+</td> -->
+				
+				<!--<tr>
+					<td>Filename to Save As:</td>
+					<td><input id="inputFileNameToSaveAs"></input></td>
+					<td><button onclick="saveTextAsFile()">Save Text to File</button></td>
+				</tr>
+				<tr>
+					<td>Select a File to Load:</td>
+					<td><input type="file" id="fileToLoad"></td>
+					<td><button onclick="loadFileAsText()">Load Selected File</button><td>
+				</tr> -->
+			</table>
+		
+			</div>
+			 
+		<!--	<script type="text/javascript">
+			
+			function saveTextAsFile()
+			{
+				var textToSave = document.getElementById("inputTextToSave").value;
+				var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+				var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+				var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+			 
+				var downloadLink = document.createElement("a");
+				downloadLink.download = fileNameToSaveAs;
+				downloadLink.innerHTML = "Download File";
+				downloadLink.href = textToSaveAsURL;
+				downloadLink.onclick = destroyClickedElement;
+				downloadLink.style.display = "none";
+				document.body.appendChild(downloadLink);
+			 
+				downloadLink.click();
+			}
+			 
+			function destroyClickedElement(event)
+			{
+				document.body.removeChild(event.target);
+			}
+			 
+			function loadFileAsText()
+			{
+				var fileToLoad = document.getElementById("fileToLoad").files[0];
+			 
+				var fileReader = new FileReader();
+				fileReader.onload = function(fileLoadedEvent) 
+				{
+					var textFromFileLoaded = fileLoadedEvent.target.result;
+					document.getElementById("inputTextToSave").value = textFromFileLoaded;
+				};
+				fileReader.readAsText(fileToLoad, "UTF-8");
+			}
+		  </script> -->
+		  <script src="scripts/bootstrap.bundle.min.js"></script>
+
+			<!-- Two -->
+				<section id="three" class="wrapper style2">
+					<div class="container">
+						<header class="major special">
+							<h2>Our Team</h2>
+							<p>The rockstars behind this project</p>
+						</header>
+						<div class="feature-grid">
+							<div class="feature">
+								<div class="image rounded"><img src="images/shritej-01edit1.jpeg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Shritej Reddy B S</h4>
+										<p>Web Developer | Game Developer | AR | VR | Unity | Design</p>
+									</header>
+									<p>GOD.</p>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="image rounded"><img src="images/hemant.png" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Hemant R</h4>
+										<p>Natural language processing | Computer vision | Self-supervised learning approaches</p>
+									</header>
+									<p>DEMI-GOD.</p>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="image rounded"><img src="images/akshay.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Akshay S</h4>
+										<p>Android App Development | Data Analysis and Visualization | Natural Language processing</p>
+									</header>
+									<p>GOD'S Messenger.</p>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="image rounded"><img src="images/mihir.jpeg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Mihir M</h4>
+										<p>Aspiring Business Leader and Analyst | Software Developer | Technical Consultant</p>
+									</header>
+									<p>Heavenly Creature.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>			
+		<!-- Footer -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
