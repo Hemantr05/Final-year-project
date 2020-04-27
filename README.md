@@ -14,7 +14,7 @@ pip3 install -r requirements.txt
 2. run python script:
 
 ```
-python3 keywordextraction/keyword_extraction2.py
+python3 keywordextraction/keywordextraction.py --url "ENTER YOUR URL"
 ```
 
 
