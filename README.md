@@ -1,4 +1,4 @@
-# Final-year-project
+# Graph-based keyword extraction
 Keyword extraction from social networking platforms using deep learing methods and nlp framworks
 
 ## Usage
